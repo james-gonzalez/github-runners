@@ -1,6 +1,6 @@
 # github-runners
 
-Self-hosted GitHub Actions runner for k8s homelab. Built on the official GitHub runner package — no third-party images.
+Self-hosted GitHub Actions runner for k8s homelab. Built on the official GitHub runner package.
 
 ## What it is
 
