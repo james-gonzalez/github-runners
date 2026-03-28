@@ -12,7 +12,10 @@ RUN apt-get update && apt-get install -y \
     jq \
     git \
     ca-certificates \
-    && rm -rf /var/lib/apt/lists/*
+    libssl-dev \
+    libicu-dev \
+    && rm -rf /var/lib/apt/lists/* \
+    && update-ca-certificates
 
 # Install kubectl
 RUN curl -LO "https://dl.k8s.io/release/$(curl -Ls https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" \
