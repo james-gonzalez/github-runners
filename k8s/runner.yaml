@@ -65,11 +65,11 @@ spec:
               fieldPath: metadata.name
         - name: LABELS
           value: "self-hosted,k8s"
-        - name: REGISTRATION_TOKEN
+        - name: GITHUB_PAT
           valueFrom:
             secretKeyRef:
               name: github-runner-token
-              key: token
+              key: github_pat
         resources:
           requests:
             cpu: 50m
